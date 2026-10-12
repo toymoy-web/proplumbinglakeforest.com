@@ -1,1 +1,13 @@
-# No redirects needed. Cloudflare Pages resolves slug/index.html routes natively.
+# v11: blog slugs renamed to include the city. Both slash forms are redirected.
+/blog/find-main-water-shutoff-valve /blog/find-main-water-shutoff-valve-lake-forest/ 301
+/blog/find-main-water-shutoff-valve/ /blog/find-main-water-shutoff-valve-lake-forest/ 301
+/blog/burst-pipe-insurance-california /blog/burst-pipe-insurance-lake-forest-ca/ 301
+/blog/burst-pipe-insurance-california/ /blog/burst-pipe-insurance-lake-forest-ca/ 301
+/blog/polybutylene-pipe-orange-county /blog/polybutylene-pipe-lake-forest-homes/ 301
+/blog/polybutylene-pipe-orange-county/ /blog/polybutylene-pipe-lake-forest-homes/ 301
+/blog/sewer-camera-inspection-before-buying-orange-county /blog/sewer-camera-inspection-buying-home-lake-forest/ 301
+/blog/sewer-camera-inspection-before-buying-orange-county/ /blog/sewer-camera-inspection-buying-home-lake-forest/ 301
+/blog/condo-water-leak-who-pays-hoa-california /blog/condo-water-leak-who-pays-hoa-lake-forest/ 301
+/blog/condo-water-leak-who-pays-hoa-california/ /blog/condo-water-leak-who-pays-hoa-lake-forest/ 301
+/blog/roof-leak-or-plumbing-leak-after-rain /blog/roof-leak-or-plumbing-leak-after-rain-lake-forest/ 301
+/blog/roof-leak-or-plumbing-leak-after-rain/ /blog/roof-leak-or-plumbing-leak-after-rain-lake-forest/ 301

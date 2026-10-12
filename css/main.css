@@ -252,8 +252,34 @@ p{margin:0 0 1rem;max-width:72ch}
 .stage-side{display:grid;gap:1.25rem;min-width:0}
 .split-photo{display:grid;grid-template-columns:1.25fr .75fr;gap:2rem;align-items:start}
 .split-photo > *{min-width:0}
-.page-head-grid > .photo{width:100%}
-@media (max-width:900px){.split-photo{grid-template-columns:minmax(0,1fr)}.head-side,.page-head-grid > .photo{width:100%}}
+@media (max-width:900px){.split-photo{grid-template-columns:minmax(0,1fr)}.head-side{width:100%}}
 .photo-head,.photo-side,.photo-stage{width:100%}
 .photo-head img{aspect-ratio:16/9;object-fit:cover}
 .photo-side img{aspect-ratio:3/2;object-fit:cover}
+
+/* v11: hero backgrounds, rhythm, sticky sidecard */
+.has-hero{position:relative;isolation:isolate;color:#fff;background:#14233a}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;border-radius:0;box-shadow:none}
+.has-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(14,26,46,.92) 0%,rgba(14,26,46,.78) 55%,rgba(14,26,46,.62) 100%)}
+.page-head.has-hero{padding:clamp(2.5rem,6vw,4.5rem) 0}
+.page-head.has-hero h1,.stage.has-hero h1{color:#fff}
+.page-head.has-hero p,.stage.has-hero .stage-sub,.stage.has-hero .proof-row{color:#EAF0F8}
+.page-head.has-hero .crumbs{color:#D3DDEC}
+.page-head.has-hero .crumbs a{color:#FFB9A1}
+.page-head.has-hero .byline{color:#EAF0F8}
+.page-head.has-hero .zips-label{color:#EAF0F8}
+.stage.has-hero h1 em{color:#FFB9A1}
+.stage.has-hero .proof-row li:before{color:#FFB9A1}
+.stage.has-hero{padding:clamp(3rem,7vw,5.5rem) 0}
+.page-head.has-hero .container > h1,.page-head.has-hero .container > p{max-width:62ch}
+main p{margin-bottom:14px}
+main p + p{margin-top:14px}
+main h1,main h2,main h3{margin-bottom:14px}
+.side-card,.sidecard{position:sticky;top:96px;align-self:start}
+.sidecard .kicker{color:#FFB9A1;margin-bottom:.5rem}
+.sidecard h3{color:#fff;font-size:1.3rem;margin-bottom:.5rem}
+.sidecard .side-link{display:inline-block;margin-top:1rem;color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.sidecard .side-link:hover{color:#FFB9A1}
+@media(max-width:900px){.side-card,.sidecard{position:static}.has-hero:before{background:rgba(14,26,46,.82)}}
+.localnote{background:#FFF8F2;border-color:#F0D8C6}
+.localnote:before{background:var(--accent)}
